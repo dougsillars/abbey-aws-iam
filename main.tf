@@ -52,9 +52,9 @@ resource "abbey_grant_kit" "IAM_membership" {
     # Path is an RFC 3986 URI, such as `github://{organization}/{repo}/path/to/file.tf`.
     location = "github://dougsillars/abbey-aws-iam/access.tf" #CHANGEME
     append = <<-EOT
-      resource "aws_iam_user_group_membership" "user_{{ .data.system.abbey.identities.aws_iam.name }}_group_${data.aws_iam_group.group1.group_name}" {
+      resource "aws_iam_user_group_membership" "user_{{ .data.system.abbey.identities.aws_iam.name }}_group_${data.aws_iam_group.abbey-test.group_name}" {
         user = "{{ .data.system.abbey.identities.aws_iam.name }}"
-        groups = ["${data.aws_iam_group.group1.group_name}"]
+        groups = ["${data.aws_iam_group.abbey-test.group_name}"]
       }
     EOT
   }
