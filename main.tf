@@ -41,7 +41,7 @@ resource "abbey_grant_kit" "IAM_membership" {
     steps = [
       {
         reviewers = {
-          one_of = ["doug.sillars@gmail.com",doug.sillars+test@gmail.com]
+          one_of = ["doug.sillars@gmail.com","doug.sillars+test@gmail.com"]
         }
       }
     ]
