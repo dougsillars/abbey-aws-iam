@@ -29,8 +29,8 @@ provider "aws" {
   region = "us-west-2" #CHANGEME
 }
 
-resource "abbey_grant_kit" "IAM_membership5" {
-  name = "IAM_membership5"
+resource "abbey_grant_kit" "IAM_membership6" {
+  name = "IAM_membership6"
   description = <<-EOT
     Grants membership to an IAM Group.
     This Grant Kit uses a single-step Grant Workflow that requires only a single reviewer
