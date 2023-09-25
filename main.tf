@@ -29,7 +29,7 @@ provider "aws" {
   region = "us-west-2" #CHANGEME
 }
 
-resource "abbey_grant_kit" "IAM_membership" {
+resource "abbey_grant_kit" "IAM_membership1" {
   name = "IAM_membership"
   description = <<-EOT
     Grants membership to an IAM Group.
