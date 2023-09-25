@@ -41,7 +41,7 @@ resource "abbey_grant_kit" "IAM_membership" {
     steps = [
       {
         reviewers = {
-          one_of = ["doug.sillars@gmail.com","doug.sillars+test@gmail.com"]
+          one_of = ["doug.sillars@gmail.com",doug.sillars+test@gmail.com]
         }
       }
     ]
@@ -60,7 +60,7 @@ resource "abbey_grant_kit" "IAM_membership" {
   }
 }
 
-resource "abbey_identity" "user_1" {
+resource "abbey_identity" "abbey_test_user" {
   abbey_account = "doug.sillars@gmail.com"
   source = "aws_iam"
   metadata = jsonencode(
